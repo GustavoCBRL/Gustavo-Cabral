@@ -12,10 +12,10 @@ Formação Acadêmica<br>
     Conclusão Prevista: Final de 2025<br>
 
 Habilidades e Competências<br>
-    Habilidades Linguagens<br>
     HTML5, CSS3, JavaScript, Bootstrap<br>
     Frameworks<br>
     Git, GitHub<br>
+    Django<br>
 
 Soft Skills<br>
-    Trabalho em Equipe, Proatividade, Atendimento ao Cliente Negociação, Prestatividade
+    Trabalho em Equipe, Proatividade, Atendimento ao Cliente, Negociação, Prestatividade

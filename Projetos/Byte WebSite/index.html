@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BYTE</title>
+  <meta name="description" content="Oferecemos soluções completas em tecnologia, com foco em desenvolvimento, modernização e sustentação de software, inteligência de dados, segurança da informação, infraestrutura de TI e inovação. Atuamos com metodologias ágeis, tecnologias emergentes e conformidade regulatória para entregar plataformas robustas, integradas e escaláveis — da fábrica de software à gestão de ativos e estoques, passando por cloud, IoT, IA e LGPD." />
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<script src="funcao.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+  <!-- ====== Cabeçalho ====== -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Início">
+       <img src="favicon.ico" alt="Logo da Empresa" width="40" height="40">
+        <span>BYTE</span>
+      </a>
+      <nav aria-label="primária">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#pessoal">Pessoal</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contato" class="btn">Solicitar proposta</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <main id="top" class="container">
+    <section class="hero">
+     
+      <h1>Soluções em tecnologia e  segurança da <span style="background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color: transparent;">informação</span>.</h1>
+      <p>Oferecemos soluções completas em tecnologia, com foco em desenvolvimento, modernização e sustentação de software, inteligência de dados, segurança da informação, infraestrutura de TI e inovação. Atuamos com metodologias ágeis, tecnologias emergentes e conformidade regulatória para entregar plataformas robustas, integradas e escaláveis — da fábrica de software à gestão de ativos e estoques, passando por cloud, IoT, IA e LGPD.</p>
+      <div class="cta">
+        <a href="#contato" class="btn" aria-label="Ir para contato">Fale com especialistas</a>
+        <a href="#servicos" class="btn outline">Ver serviços</a>
+      </div>
+    
+    </section>
+
+    <!-- ====== Serviços ====== -->
+    <section id="servicos">
+      <div class="section-head">
+        <h2>Nossos serviços</h2>
+        <a href="#contato" class="badge">Precisa de algo específico?</a>
+      </div>
+      <div class="grid grid-3">
+        <article class="service card">
+          <h3>Desenvolvimento Web & APIs</h3>
+          <p id="A1">
+            Sites, apps e integrações robustas com foco em performance, SEO e acessibilidade.<br>
+            React, Node, Next.js.
+          </p>
+          <button type="button" class="expandir" onclick="expandirContA1()"> 
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+        </article>
+        <article class="service card">
+          <h3>Gestão e Inteligência de Dados</h3>
+          <p id="A2">Administração de Banco de Dados (DBA), Modelagem de dados, Business Intelligence (BI), Data Warehouse (DW), ETL (Extração, Transformação e Carga), Visualização de dados / Dashboards, Ciência de Dados / Data Science, Big Data, Qualidade de dados / Governança de dados, Banco de dados SQL / NoSQL.</p>
+          <button type="button" class="expandir" onclick="expandirContA2()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+        </article>
+        <article class="service card">
+          <h3>Segurança & LGPD</h3>
+          <p id="A3">
+            Segurança da Informação,
+            Cibersegurança / Segurança Cibernética,
+            Análise de vulnerabilidades,
+            Teste de Intrusão / Pentest,
+            SOC (Security Operations Center),
+            SIEM (Security Information and Event Management),
+            Gestão de Identidade e Acesso (IAM),
+            Firewall / WAF (Web Application Firewall),
+            Consultoria LGPD / Adequação à LGPD,
+            DPO as a Service (Encarregado de Dados como Serviço),
+            Relatório de Impacto à Proteção de Dados (RIPD),
+            Mapeamento de dados (Data Mapping),
+            Privacidade desde a concepção (Privacy by Design).
+            </p>
+           <button type="button" class="expandir" onclick="expandirContA3()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+        </article>
+
+        <article class="service card">
+          <h3>Infraestrutura de TI, Nuvem e Operações</h3>
+          <p id="A4">Computação em nuvem / Cloud Computing (incluindo termos como AWS, Azure, Google Cloud),
+            Migração para nuvem,
+            Infraestrutura como Serviço (IaaS),
+            DevOps / DevSecOps,
+            Virtualização de servidores,
+            Monitoramento de infraestrutura,
+            Service Desk / Help Desk,
+            Gestão de ativos de TI,
+            Outsourcing de TI / Terceirização de TI.
+            </p>
+             <button type="expandir" class="expandir" onclick="expandirContA4()"> 
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+        </article>
+
+        <article class="service card">
+        <h3>Licitações de Gestão de Estoques e Ativos</h3>
+          <p id="A5">
+            RFID: RFID, Identificação por Radiofrequência
+            Código de Barras: Código de Barras, Leitor de Código de Barras, Barcode, QR Code
+            NFC: NFC, Near Field Communication
+            Beacons: Beacons, BLE, Bluetooth Low Energy
+            IoT (Internet das Coisas): IoT, Internet das Coisas, Sensores Inteligentes (muitas vezes, a solução de estoque é parte de um projeto maior de IoT)
+            Sistema SCADA.
+
+            Gestão de Ativos: Gestão de Ativos, Controle de Ativos, Rastreamento de Ativos, Asset Tracking;
+            Gestão de Patrimônio: Controle Patrimonial, Gestão de Patrimônio, Inventário Patrimonial, Plaquetas de Patrimônio, Tombamento;
+            Gestão de Estoques/Almoxarifado: Controle de Estoque, Gestão de Almoxarifado, Automação de Almoxarifado, Inventário Físico, Acuracidade de Estoque, Sistema de Gerenciamento de Armazém, WMS (Warehouse Management System);
+            Logística e Cadeia de Suprimentos: Logística Reversa, Cadeia de Suprimentos, Supply Chain, Rastreabilidade de Produtos;
+            Aplicações Específicas: Controle de Insumos Hospitalares, Gestão de Medicamentos, Rastreabilidade de Documentos, Controle de Frota, Gestão de Acervo (para bibliotecas e arquivos);
+
+            Hardware: Coletor de Dados, Leitor RFID (pode ser portal, túnel, manual ou de mesa), Antena RFID, Impressora de Etiquetas RFID, Etiqueta Inteligente, Tag RFID (pode ser ativa ou passiva);
+            Software: Software de Gestão de Inventário, Plataforma de Rastreamento, Sistema de Controle de Estoque, Software WMS.
+            </p>
+             <button type="expandir" class="expandir" onclick="expandirContA5()"> 
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- ====== Sobre ====== -->
+    <section id="sobre">
+      <div class="section-head">
+        <h2>Sobre a Solution ByTech</h2>
+      </div>
+      <div class="about">
+        <div class="card" style="padding:1.2rem;">
+          <h3>Missão</h3>
+          <p>Desenvolver e entregar soluções tecnológicas inovadoras, seguras e escaláveis que impulsionem a transformação digital de nossos clientes. Atuamos com excelência em software, dados, infraestrutura e conformidade, promovendo eficiência, inteligência e proteção em cada projeto — do código à nuvem, da informação à estratégia.</p>
+          <h3 style="margin-top:1rem;">Valores</h3>
+          <p>Transparência, parceria de longo prazo, excelência técnica e foco em resultado.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====== Pessoal ====== -->
+     <section id="pessoal">
+        <div class="section-head">
+          <h2>Pessoal</h2>
+        </div>
+        <div class="pessoas pessoas-3">
+          <article class="pessoa card">
+            <h3>Mariana da Silveira</h3>
+            <p id="B1">
+               Doutora em Ciências da Segurança, Mariana da
+               Silveira é Especialista em Gestão de Riscos
+               Corporativos, Riscos Cibernéticos e em Investigação
+               Empresarial.
+               DPO as a Service em empresas do Mercado Nacional,
+               possui mais de 20 anos de experiência nos  setores
+               público e privado, nos seguimentos de Auditoria de
+               Processos e Operações, Supply Chain, Privacidade e
+               Proteção de Dados Pessoais, Segurança da
+               Informação, Gestão de Projetos, Gestão de Riscos e
+               Compliance.
+            </p>
+            <button class="expandir" type="button" onclick="ConhecaB1()">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+          </article>
+          <article class="pessoa card">
+            <h3>José Wagner</h3>
+            <p id="B2">     
+              Mestre em Engenharia da Computação, José
+              Wagner Bungart é Professor, Escritor, Consultor,
+              Auditor e Gestor de Governança, Riscos e
+              Compliance, em Segurança da Informação e Privacidade. 
+              Possui experiência de 30 anos em empresas de
+              Telecomunicações,  Varejo, Seguradora, Energia,
+              Pesquisa, Logística e Indústria.
+            </p>
+            <button class="expandir" type="button" onclick="ConhecaB2()">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+          </article>
+          <article class="pessoa card">
+            <h3>Gustavo Cabral</h3>
+            <p id="B3">
+              Analista em Desenvolvimento de Sistemas, com
+              foco em transformar ideias em interfaces digitai intuitivas, responsivas e visualmente atraentes.  
+              Especialidade em desenvolvimento frontend,
+              aplicação de  HTML e CSS.
+            </p>
+            <button class="expandir" type="button" onclick="ConhecaB3()">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
+                <circle cx="8" cy="8" r="8" fill="#4CAF50"/>
+                <rect x="7" y="3" width="2" height="10" fill="#fff"/>
+                <rect x="3" y="7" width="10" height="2" fill="#fff"/>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </section>
+
+    <!-- ====== Contato ====== -->
+    <section id="contato">
+      <div class="section-head">
+        <h2>Contato</h2>
+      </div>
+      <div class="contact">
+        <form id="form-contato" class="card" style="padding:1.2rem;">
+          <div>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="voce@empresa.com" required />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente seu projeto"></textarea>
+          </div>
+          <button class="btn" type="submit">Enviar mensagem</button>
+        </form>
+        <div class="card" style="padding:1.2rem;">
+          <h3>Fale Direto</h3>
+          <p class="muted">contato@solutionbytech.com<br/>+55 (61) 98299-0749<br/></p>
+          <h3 style="margin-top:1rem;">Redes</h3>
+          <p class="muted"><a href="http://linkedin.com/company/solution-bytech">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+      <span>© <span id="year"></span> Solution ByTech. Todos os direitos reservados.</span>
+      <span><a href="#top">Voltar ao topo ↑</a></span>
+    </div>
+  </footer>
+
+  
+
+</body>
+</html>
