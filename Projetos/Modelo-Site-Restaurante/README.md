@@ -1,3 +1,10 @@
+
+Modelo de Site de Restaurante React
+
+Modelo de site para restaurante construido com Next.js. Fornece um layout responsivo com seções para cardápio, reservas e contato, componentes reutilizáveis e exemplos de estilização para facilitar personalização. Pronto para desenvolvimento local e deploy (otimização de fontes com next/font e compatibilidade com Vercel).
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
