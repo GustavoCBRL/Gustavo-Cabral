@@ -1,36 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Link from 'next/link'
 
-export default function Cardapio(){
-    return(
-     <>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Restaurante-Cardápio</title >
-    </head>
-       <header className="bg-light border-bottom">
-            <div className="container py-3">
-            <div className="d-flex justify-content-between align-items-center">
-            <div>
-                <h1 className="h3 fw-bold text-dark mb-0">Restaurante</h1>
-                <small className="text-muted">Uma Nova Experiência Gastronômica</small>
-            </div>
-            <div className="d-flex gap-3">
-                <Link href="/" className= "nav-link" >Página Principal</Link>
-                <Link href="/reserva" className= "nav-link" >Reservas</Link>
-                <Link href="/sobre" className= "nav-link" >Sobre</Link>
-            </div>
-            </div>
-            </div>
-        </header >
 
-        <PratosExec />
-
-        </>
-    )
-}
-
-export function PratosExec() {
+export  default function PratosExec() {
     return (
     <>
     <div className='container'>
