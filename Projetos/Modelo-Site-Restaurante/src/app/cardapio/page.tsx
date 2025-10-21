@@ -27,7 +27,7 @@ export  default function PratosExec() {
             </div>
             <div className="col-md-3">
                 <div className="card h-100">
-                    <img src="/strogonoff.jpeg" className="card-img-top" alt="Picadinho de Carne de Sol Angus" />
+                    <img src="/strogonoff.jpeg" className="card-img-top" alt="Strogonoff de Frango" />
                     <div className="card-body">
                         <h5 className="card-title">Strognoff de Frango</h5>
                         <p className="card-text">Tiras macias de frango em molho cremoso de cogumelos com toque especial de mostarda. Acompanha arroz branco soltinho e batata palha dourada. O clássico que nunca sai de moda, feito com todo carinho!</p>
@@ -36,7 +36,7 @@ export  default function PratosExec() {
             </div>
             <div className="col-md-3">
                 <div className="card h-100">
-                    <img src="espaguete.jpg" className="card-img-top" alt="Picadinho de Carne de Sol Angus" />
+                    <img src="espaguete.jpg" className="card-img-top" alt="Espaguete ao Molho Branco" />
                     <div className="card-body">
                         <h5 className="card-title">Espaguete ao Molho Branco</h5>
                         <p className="card-text">Massa artesanal al dente envolvida em cremoso molho branco com alho, queijo parmesão e ervas finas. Finalizado com frango grelhado em cubos e champignons salteados. Uma viagem à Itália!</p>
@@ -58,7 +58,7 @@ export function PratosFam(){
             <div className='row'>
                 <div className='col-md-2'>
                     <div className="card h-100">
-                    <img src="/file-de-frango-a-parmegiana.jpg" className="card-img-top" alt="Picadinho de Carne de Sol Angus" />
+                    <img src="/file-de-frango-a-parmegiana.jpg" className="card-img-top" alt="Parmegiana de Frango para Duas Pessoas" />
                     <div className="card-body">
                         <h5 className="card-title">Parmegianda de Frango para Duas Pessoas</h5>
                         <p className="card-text">
