@@ -7,7 +7,7 @@ export  default function PratosExec() {
     <div className='container'>
         <h2 className="text-center mb-4 mt-4">Pratos Executivos</h2>
         <div className="row">
-            <div className="col-md-3">
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div className="card h-100">
                     <img src="/file-de-frango-a-parmegiana.jpg" className="card-img-top" alt="Parmegiana de Frango" />
                     <div className="card-body">
@@ -16,7 +16,7 @@ export  default function PratosExec() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div className="card h-100">
                     <img src="/picadinhocarne.jpg" className="card-img-top" alt="Picadinho de Carne de Sol Angus" />
                     <div className="card-body">
@@ -25,7 +25,7 @@ export  default function PratosExec() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <div className="card h-100">
                     <img src="/strogonoff.jpeg" className="card-img-top" alt="Strogonoff de Frango" />
                     <div className="card-body">
@@ -56,7 +56,7 @@ export function PratosFam(){
         <div className='container'>
             <h2 className='text-center mb-4 mt-4'>Pratos Família</h2>
             <div className='row'>
-                <div className='col-md-2'>
+                <div className='col-12 col-md-6 col-lg-4 mb-4'>
                     <div className="card h-100">
                     <img src="/file-de-frango-a-parmegiana.jpg" className="card-img-top" alt="Parmegiana de Frango para Duas Pessoas" />
                     <div className="card-body">
