@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Reserva() {
     return(
         <>
-        <div className="container mx-2 my-2 ">
+        <div className="container mx-2 my-2 py-3">
            <form>
             <div className="row">
                 <div className="my-3 col">
