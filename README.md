@@ -1,4 +1,10 @@
 # Gustavo-Cabral
+
+# Principais Projetos <br>
+    Modelo de Site para Restaurantes: https://restaurante-chi-two.vercel.app/
+
+    Site da SolutionBytech: https://bytewebsite.vercel.app/
+
 # Apresentação <br>
     Busco minha primeira oportunidade como Desenvolvedor Web (Front-end) para aplicar e
     expandir meus conhecimentos em tecnologias fundamentais como HTML5, CSS3, JavaScript e
@@ -12,8 +18,8 @@
 
 # Habilidades e Competências<br>
     HTML5, CSS3, JavaScript, Bootstrap
-    Frameworks
     Git, GitHub
+    React
     Django
 
 # Soft Skills<br>
