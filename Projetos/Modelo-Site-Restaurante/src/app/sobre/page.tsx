@@ -64,9 +64,9 @@ function Contatos(){
     <div>
         <h2 className='h2'>Contatos</h2>
         <ul className="list-group list-group-flush">
-            <li className="list-group-item"><i className="bi bi-whatsapp me-2"></i>Whatsapp: xx-xxxxxxxxx </li>
-            <li className="list-group-item"><i className="bi bi-linkedin me-2"></i>Linkedin: exampleprofile</li>
-            <li className="list-group-item"><i className="bi bi-envelope-at me-2"></i>Email: example@provider.com</li>
+            <li className="list-group-item"><a href = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações' className='link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'><i className="bi bi-whatsapp me-2"></i>Whatsapp</a></li>
+            <li className="list-group-item"><a href = 'mailto:' className='link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'><i className="bi bi-envelope me-2"></i>Email</a></li>
+            <li className="list-group-item"><a className='link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'><i className="bi bi-instagram me-2"></i>Instagram</a></li>
         </ul>
     </div>
     )

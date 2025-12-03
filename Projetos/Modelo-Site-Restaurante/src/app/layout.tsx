@@ -58,6 +58,46 @@ export default function RootLayout({
             </header>
               {children}
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async/>
+          <footer className="bg-dark text-white py-4 mt-5 w-screen">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-4 mb-3">
+                  <h5>Restaurante</h5>
+                  <p>Sabor e qualidade em cada prato.</p>
+                </div>
+                <div className="col-md-4 mb-3">
+                  <h5>Contato</h5>
+                  <ul className="list-unstyled">
+                    <li className="mb-2">
+                      <i className="bi bi-whatsapp"></i> WhatsApp: (11) 99999-9999
+                    </li>
+                    <li className="mb-2">
+                      <i className="bi bi-envelope"></i> Email: contato@restaurante.com
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-md-4 mb-3">
+                  <h5>Redes Sociais</h5>
+                  <ul className="list-unstyled">
+                    <li className="mb-2">
+                      <a href="#" className="text-white text-decoration-none">
+                        <i className="bi bi-instagram"></i> Instagram
+                      </a>
+                    </li>
+                    <li className="mb-2">
+                      <a href="#" className="text-white text-decoration-none">
+                        <i className="bi bi-facebook"></i> Facebook
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr className="bg-secondary" />
+              <div className="text-center ">
+                <p className="mb-0">&copy; 2024 Restaurante. Todos os direitos reservados.</p>
+              </div>
+            </div>
+          </footer>
         </body>
       </html>
   );
