@@ -61,7 +61,7 @@ function SobreNos(){
 
 function Contatos(){
     return(
-    <div>
+    <div className='vh-100'>
         <h2 className='h2'>Contatos</h2>
         <ul className="list-group list-group-flush">
             <li className="list-group-item"><a href = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações' className='link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'><i className="bi bi-whatsapp me-2"></i>Whatsapp</a></li>
