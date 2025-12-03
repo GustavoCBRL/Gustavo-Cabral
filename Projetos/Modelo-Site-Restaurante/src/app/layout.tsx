@@ -58,7 +58,7 @@ export default function RootLayout({
             </header>
               {children}
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async/>
-          <footer className="bg-dark text-white py-4 mt-5 w-screen">
+          <footer className="bg-dark text-white py-4  w-screen position-relative">
             <div className="container">
               <div className="row">
                 <div className="col-md-4 mb-3">
