@@ -49,19 +49,18 @@ import { useState  } from 'react'
 
 function SobreNos(){
     return(
-            <div className='blockquote'>
-                <h2 className='h2'>Nossa História</h2>
-                <p className="mb-0">
-                    História a ser inserida aqui nesse espaço.
-                </p>
-            </div>
-        
+        <div>
+            <h2 className='h2'>Nossa História</h2>
+            <p className="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
     )
 }
 
 function Contatos(){
     return(
-    <div className='vh-100'>
+    <div>
         <h2 className='h2'>Contatos</h2>
         <ul className="list-group list-group-flush">
             <li className="list-group-item"><a href = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações' className='link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'><i className="bi bi-whatsapp me-2"></i>Whatsapp</a></li>
