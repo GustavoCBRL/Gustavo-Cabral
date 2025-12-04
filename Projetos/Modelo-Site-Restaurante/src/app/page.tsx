@@ -12,6 +12,8 @@ export default function Princ(){
                     loop 
                     muted 
                     playsInline
+                    preload='metadata'
+                    poster='/posterbg.png'
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{objectFit: 'cover', opacity: 0.4}}
 

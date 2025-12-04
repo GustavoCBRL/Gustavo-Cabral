@@ -5,7 +5,7 @@ export default function Reserva() {
     return(
         <>
         <div className="container  m-auto  vh-100">
-           <form >
+           <form>
             <div className="row">
                 <div className="my-3">
                     <label className="form-label row">Responsável pela Reserva: </label>
