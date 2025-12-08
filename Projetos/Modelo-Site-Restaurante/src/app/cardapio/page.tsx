@@ -2,11 +2,35 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-
 import { useState } from 'react'
+import { useEffect } from 'react'
+
+
+
 
 export default function Cardapio() {
     const [currentView, setCurrentView] = useState('executivos')
+    const [itens, setItens] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+    
+    useEffect(() => {
+        fetch('http://127.0.0.1:8000/api/items/')
+            .then(res => {
+                if (!res.ok) throw new Error('Erro na resposta da API')
+                return res.json()
+            })
+            .then(data => {
+                console.log('Dados recebidos:', data);
+                setItens(data);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('Erro ao buscar API:', error);
+                setError(error.message);
+                setLoading(false);
+            })
+    }, [])
 
     return(
         <div className="container py-4">
