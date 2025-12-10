@@ -3,7 +3,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useState } from 'react'
-import { useEffect } from 'react'
 
 
 
@@ -14,7 +13,9 @@ export default function Cardapio() {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     
-    useEffect(() => {
+
+    // API do Cardápio
+    /*useEffect(() => {
         fetch('http://127.0.0.1:8000/api/items/')
             .then(res => {
                 if (!res.ok) throw new Error('Erro na resposta da API')
@@ -30,7 +31,7 @@ export default function Cardapio() {
                 setError(error.message);
                 setLoading(false);
             })
-    }, [])
+    }, [])*/
 
     return(
         <div className="container py-4">

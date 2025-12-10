@@ -1,6 +1,8 @@
 "use client"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { APIProvider } from '@vis.gl/react-google-maps';
+import MapComponent from '../components/MapComponent'
 import { useState  } from 'react'
 
 
@@ -13,7 +15,7 @@ import { useState  } from 'react'
                 
                 {/* Menu de navegação */}
                 <div className="d-flex justify-content-center mb-4">
-                    <div className="btn-group" role="group">
+                    <div className="btn-group-vertical" role="group">
                         <button 
                             type="button" 
                             className={`btn ${currentView === 'sobrenos' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
@@ -35,6 +37,13 @@ import { useState  } from 'react'
                         >
                             Nossos Colaboradores
                         </button>
+                         <button 
+                            type="button" 
+                            className={`btn ${currentView === 'localizacao' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            onClick={() => setCurrentView('localizacao')}
+                        >
+                            Localização
+                        </button>
                     </div>
                 </div>
     
@@ -42,6 +51,7 @@ import { useState  } from 'react'
                 {currentView === 'sobrenos' && <SobreNos />}
                 {currentView === 'contato' && <Contatos />}
                 {currentView === 'colaboradores' && <Colaboradores />}
+                {currentView === 'localizacao' && <Localizacao />}
             </div>
         )
     }
@@ -87,3 +97,12 @@ function Colaboradores(){
 }
 
 
+function Localizacao(){
+    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
+
+  return (
+    <APIProvider apiKey={apiKey}>
+      <MapComponent />
+    </APIProvider>
+  );
+}

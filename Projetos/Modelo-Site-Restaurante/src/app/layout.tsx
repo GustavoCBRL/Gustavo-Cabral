@@ -1,10 +1,21 @@
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Josefin_Sans, SUSE_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ["latin"]
+});
+
+const geistMontserrat = Montserrat({
+  variable: "--font-montserrat",
+  weight: ['300', '400', '500', '700'],
+  subsets: ["latin"]
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +44,7 @@ export default function RootLayout({
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Restaurante</title >
         </head>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <body className={`${josefinSans.variable} ${geistMontserrat.variable} antialiased`}>
             <header className="bg-light border-bottom">
                 <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
                   <div className="container-fluid">
