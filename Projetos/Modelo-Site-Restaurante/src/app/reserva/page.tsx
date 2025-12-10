@@ -6,6 +6,7 @@ export default function Reserva() {
     return(
         <>
         <div className="container  m-auto  vh-100">
+            <h2 className='text-center m-4'>Solicite sua Reserva!</h2>
            <form>
             <div className="row">
                 <div className="my-3">
