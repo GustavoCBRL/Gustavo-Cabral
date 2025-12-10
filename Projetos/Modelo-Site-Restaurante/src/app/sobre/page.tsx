@@ -7,7 +7,7 @@ import { useState  } from 'react'
 
 
     export default function Sobre() {
-        const [currentView, setCurrentView] = useState('sobrenos')
+        const [currentView, setCurrentView] = useState('contato')
     
         return(
             <div className="container py-4">
