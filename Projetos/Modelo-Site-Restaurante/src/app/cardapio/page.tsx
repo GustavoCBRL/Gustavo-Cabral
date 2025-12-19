@@ -93,6 +93,7 @@ function PratosExec() {
 
     if (loading) return <p className="text-center">Carregando cardápio...</p>
     if (error) return <p className="text-center text-danger">Erro ao carregar: {error}</p>
+    if (!parmegiana || !picadinho || !strogonoff || !espaguete) return <p className="text-center">Itens não encontrados</p>
 
     return (
     
@@ -170,12 +171,13 @@ function PratosFam(){
                 setLoading(false);
             })
     }, [])
-
     if (loading) return <p className="text-center">Carregando cardápio...</p>
     if (error) return <p className="text-center text-danger">Erro ao carregar: {error}</p>
+    if (!parmegianafam || !carnedesol || !strogonofffam) return <p className="text-center">Itens não encontrados</p>
 
     return(
         <div className='container'>
+            <h2 className='text-center mb-4 mt-4 py-3'>Pratos Família</h2>
             <h2 className='text-center mb-4 mt-4 py-3'>Pratos Família</h2>
             <div className='row'>
                 <div className='col-12 col-md-6 col-lg-4 mb-4'>
@@ -249,6 +251,7 @@ function Drinks(){
 
     if (loading) return <p className="text-center">Carregando cardápio...</p>
     if (error) return <p className="text-center text-danger">Erro ao carregar: {error}</p>
+    if (!drymartini || !mojito|| !marguerita) return <p className="text-center">Itens não encontrados</p>
     return(
         
         <div className='container'>
