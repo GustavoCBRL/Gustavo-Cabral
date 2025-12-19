@@ -5,8 +5,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-
-
+interface MenuItem {
+    id: number;
+    nome: string;
+    descricao: string;
+    preco: string;
+    imagem: string;
+}
 
 
 export default function Cardapio() {
@@ -58,9 +63,9 @@ export default function Cardapio() {
 
 
 function PratosExec() {
-    const [itens, setItens] = useState([])
+    const [itens, setItens] = useState<MenuItem[]>([])
     const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+    const [error, setError] = useState<string | null>(null)
     const parmegiana = itens.find(u => u.id === 1)
     const picadinho = itens.find(u => u.id === 2)
     const strogonoff = itens.find(u => u.id === 3)
@@ -141,9 +146,9 @@ function PratosExec() {
 
 function PratosFam(){
 
-    const [itens, setItens] = useState([])
+    const [itens, setItens] = useState<MenuItem[]>([])
     const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+    const [error, setError] = useState<string | null>(null)
     
     const parmegianafam = itens.find(u => u.id === 5)
     const carnedesol = itens.find(u => u.id === 6)
@@ -214,9 +219,9 @@ function PratosFam(){
 }
 
 function Drinks(){
-      const [itens, setItens] = useState([])
+    const [itens, setItens] = useState<MenuItem[]>([])
     const [loading, setLoading] = useState(true)
-    const [error, setError] = useState(null)
+    const [error, setError] = useState<string | null>(null)
     const drymartini = itens.find(u => u.id === 8)
     const mojito = itens.find(u => u.id === 9)
     const marguerita = itens.find(u => u.id === 10)
