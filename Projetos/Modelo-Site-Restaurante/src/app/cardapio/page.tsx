@@ -157,7 +157,7 @@ function PratosFam(){
 
 // API do Cardápio
     useEffect(() => {
-        fetch('https://cardapioapi-xiz8.onrender.com/api/items/')
+        fetch('https://cardapioapi-production-1b26.up.railway.app/api/items/')
             .then(res => {
                 if (!res.ok) throw new Error('Erro na resposta da API')
                 return res.json()
@@ -232,7 +232,7 @@ function Drinks(){
 
 // API do Cardápio
     useEffect(() => {
-        fetch('https://cardapioapi-xiz8.onrender.com/api/items/')
+        fetch('https://cardapioapi-production-1b26.up.railway.app/api/items/')
             .then(res => {
                 if (!res.ok) throw new Error('Erro na resposta da API')
                 return res.json()
