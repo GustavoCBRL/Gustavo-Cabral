@@ -178,7 +178,6 @@ function PratosFam(){
     return(
         <div className='container'>
             <h2 className='text-center mb-4 mt-4 py-3'>Pratos Família</h2>
-            <h2 className='text-center mb-4 mt-4 py-3'>Pratos Família</h2>
             <div className='row'>
                 <div className='col-12 col-md-6 col-lg-4 mb-4'>
                     <div className="card h-100">
