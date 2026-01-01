@@ -23,29 +23,35 @@ export default function Cardapio() {
             <h1 className="text-center mb-4">Cardápio</h1>
             
             {/* Menu de navegação */}
-            <div className="d-flex justify-content-center mb-4">
-                <div className="btn-group" role="group">
-                    <button 
-                        type="button" 
-                        className={`btn ${currentView === 'executivos' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
-                        onClick={() => setCurrentView('executivos')}
-                    >
-                        Pratos Executivos
-                    </button>
-                    <button 
-                        type="button" 
-                        className={`btn ${currentView === 'familia' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
-                        onClick={() => setCurrentView('familia')}
-                    >
-                        Pratos Família
-                    </button>
-                     <button 
-                        type="button" 
-                        className={`btn ${currentView === 'drinks' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
-                        onClick={() => setCurrentView('drinks')}
-                    >
-                        Drinks
-                    </button>
+            <div className="d-flex justify-content-center">
+                <div className="row row-col-2 row-col-md-4 g-2 w-100" role="group">
+                    <div className='col'>
+                        <button 
+                            type="button" 
+                            className={`btn w-100 ${currentView === 'executivos' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            onClick={() => setCurrentView('executivos')}
+                        >
+                            Pratos Executivos
+                        </button>
+                    </div>
+                    <div className='col'>
+                        <button 
+                            type="button" 
+                            className={`btn w-100 ${currentView === 'familia' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            onClick={() => setCurrentView('familia')}
+                        >
+                            Pratos Família
+                        </button>
+                    </div>
+                    <div className='col'>
+                        <button 
+                            type="button" 
+                            className={`btn w-100 ${currentView === 'drinks' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            onClick={() => setCurrentView('drinks')}
+                        >
+                            Drinks
+                        </button>
+                    </div>
                 </div>
             </div>
 

@@ -14,38 +14,48 @@ import { useState  } from 'react'
                 <h1 className="text-center mb-4">Sobre</h1>
                 
                 {/* Menu de navegação */}
-                <div className="d-flex justify-content-center mb-4">
-                    <div className="btn-group-vertical" role="group">
+            <div className="d-flex justify-content-center">
+                <div className="row row-cols-2 row-cols-md-4 g-2 w-100 mb-4" role="group">
+                    <div className='col'>
                         <button 
                             type="button" 
-                            className={`btn ${currentView === 'sobrenos' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
-                            onClick={() => setCurrentView('sobrenos')}
-                        >
-                            Sobre Nós
-                        </button>
-                        <button 
-                            type="button" 
-                            className={`btn ${currentView === 'contato' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            className={`btn w-100 ${currentView === 'contato' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('contato')}
                         >
                             Contatos
                         </button>
-                         <button 
+                    </div>
+                    <div className='col'>
+                        <button 
                             type="button" 
-                            className={`btn ${currentView === 'colaboradores' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            className={`btn w-100 ${currentView === 'colaboradores' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('colaboradores')}
                         >
-                            Nossos Colaboradores
+                            Colaboradores
                         </button>
-                         <button 
+                    </div>
+                    <div className='col'>
+                        <button 
                             type="button" 
-                            className={`btn ${currentView === 'localizacao' ? 'btn-outline-dark' : 'btn-primary-dark'}`}
+                            className={`btn w-100 ${currentView === 'sobrenos' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
+                            onClick={() => setCurrentView('sobrenos')}
+                        >
+                            Sobre Nós
+                        </button>
+                    </div>
+                    <div className='col'>
+                        <button 
+                            type="button" 
+                            className={`btn w-100 ${currentView === 'localizacao' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('localizacao')}
                         >
                             Localização
                         </button>
                     </div>
+               
                 </div>
+            </div>
+
     
                 {/* Conteúdo baseado na seleção */}
                 {currentView === 'sobrenos' && <SobreNos />}
