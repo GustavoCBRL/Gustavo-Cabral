@@ -7,7 +7,7 @@ import { useState  } from 'react'
 
 
     export default function Sobre() {
-        const [currentView, setCurrentView] = useState('contato')
+        const [currentView, setCurrentView] = useState('contatos')
     
         return(
             <div className="container py-4">
@@ -19,7 +19,7 @@ import { useState  } from 'react'
                     <div className='col'>
                         <button 
                             type="button" 
-                            className={`btn w-100 ${currentView === 'contato' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
+                            className={`btn btn-md btn-block w-100 py-3 fw-semibold shadow-sm ${currentView === 'contato' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('contato')}
                         >
                             Contatos
@@ -28,7 +28,7 @@ import { useState  } from 'react'
                     <div className='col'>
                         <button 
                             type="button" 
-                            className={`btn w-100 ${currentView === 'colaboradores' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
+                            className={`btn btn-md btn-block w-100 py-3 fw-semibold shadow-sm ${currentView === 'colaboradores' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('colaboradores')}
                         >
                             Colaboradores
@@ -37,7 +37,7 @@ import { useState  } from 'react'
                     <div className='col'>
                         <button 
                             type="button" 
-                            className={`btn w-100 ${currentView === 'sobrenos' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
+                            className={`btn btn-md btn-block w-100 py-3 fw-semibold shadow-sm ${currentView === 'sobrenos' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('sobrenos')}
                         >
                             Sobre Nós
@@ -46,7 +46,7 @@ import { useState  } from 'react'
                     <div className='col'>
                         <button 
                             type="button" 
-                            className={`btn w-100 ${currentView === 'localizacao' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
+                            className={`btn btn-md btn-block w-100 py-3 fw-semibold shadow-sm ${currentView === 'localizacao' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('localizacao')}
                         >
                             Localização
@@ -55,6 +55,7 @@ import { useState  } from 'react'
                
                 </div>
             </div>
+
 
     
                 {/* Conteúdo baseado na seleção */}
