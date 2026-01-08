@@ -21,6 +21,7 @@ export default function Reserva() {
     return(
         <>
         <div className="container">
+            {/* SEO: H2 descritivo da página de reservas com call-to-action */}
             <h2 className='text-center m-4'>Solicite sua Reserva!</h2>
            <form onSubmit={handleSubmit}>
             <div className="row">

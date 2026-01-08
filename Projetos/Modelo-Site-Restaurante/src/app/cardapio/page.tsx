@@ -43,6 +43,7 @@ export default function Cardapio() {
     return(
         <>
         <div className="container py-4">
+            {/* SEO: H1 da página do cardápio - importante para identificar o conteúdo principal */}
             <h1 className="text-center mb-4">Cardápio</h1>
             {/* Menu de navegação */}
             <div className="d-flex justify-content-center">

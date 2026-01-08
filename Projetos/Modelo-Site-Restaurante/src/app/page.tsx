@@ -7,13 +7,14 @@ export default function Princ(){
         <>
             <div className="position-relative w-100  vh-100 overflow-hidden">
                 {/* Vídeo de fundo */}
+                {/* SEO: Vídeo de background com poster para fallback - importante para performance */}
                 <video 
                     autoPlay 
                     loop 
                     muted 
                     playsInline
-                    preload='metadata'
-                    poster='/posterbg.png'
+                    preload='metadata' {/* SEO: Preload metadata para melhor performance */}
+                    poster='/posterbg.png' {/* SEO: Poster como fallback para melhor UX */}
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{objectFit: 'cover', opacity: 0.4}}
 
@@ -27,7 +28,9 @@ export default function Princ(){
                 {/* Conteúdo sobre o vídeo */}
                 <div className="position-relative d-flex align-items-center justify-content-center h-100 text-dark">
                     <div className="text-center">
+                        {/* SEO: H1 principal da página - fundamental para SEO */}
                         <h1 className="display-1 fw-bold mb-4 text-black" style={{textShadow: '4px 4px 16px rgba(0,0,0,0.7)'}}>Restaurante</h1>
+                        {/* SEO: Subtítulo descritivo com palavras-chave relevantes */}
                         <p className="fs-3 text-black" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.6)'}}>Uma Nova Experiência Gastronômica</p>
                         
                         <div className="dropdown mt-4">
@@ -35,6 +38,7 @@ export default function Princ(){
                                 Descubra um novo sabor!
                             </a>
 
+                            {/* SEO: Links internos com texto descritivo e call-to-action */}
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="/cardapio">📖 Veja nosso Cardápio!</a></li>
                                 <li><a className="dropdown-item" href="/reserva">👥 Faça sua Reserva!</a></li>
