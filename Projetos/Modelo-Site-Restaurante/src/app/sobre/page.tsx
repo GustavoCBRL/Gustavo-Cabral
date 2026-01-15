@@ -111,10 +111,9 @@ function Colaboradores(){
 
 
 function Localizacao(){
-    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 
   return (
-    <APIProvider apiKey={apiKey}>
+    <APIProvider apiKey='AIzaSyCSvKXkDfoS3CcZ3-4s2LpOyOOmX_n141A'>
       <MapComponent />
       <PlaceDetails placeId='ChIJ_Qdn5dZZzpQRWJ5lDWdVmSY' />
     </APIProvider>
