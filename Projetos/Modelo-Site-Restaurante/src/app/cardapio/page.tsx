@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { p } from 'framer-motion/client'
+
 
 type ItemCardapio = {
     id: number;
@@ -18,7 +18,7 @@ type ItemCardapio = {
 
 export default function Cardapio() {
     const [items, setItems] = useState<ItemCardapio[]>([]);
-    const [currentView, setCurrentView] = useState('Todos');
+    const [currentView, setCurrentView] = useState('Pratos Executivos');
     const [carregando, setCarregando] = useState(true)
 
     useEffect(() => {
@@ -30,9 +30,9 @@ export default function Cardapio() {
       });
   }, []);
 
-  const categorias = ["Todos", ...new Set(items.map(item => item.categoria_nome))];
+  const categorias = [...new Set(items.map(item => item.categoria_nome))];
 
-  const itensFiltrados = currentView === 'Todos' 
+  const itensFiltrados = currentView === '' 
     ? items 
     : items.filter(item => item.categoria_nome === currentView);
 

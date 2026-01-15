@@ -3,11 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { APIProvider } from '@vis.gl/react-google-maps';
 import MapComponent from '../components/MapComponent'
+import PlaceDetails from '../components/PlaceDetails';
 import { useState  } from 'react'
 
 
     export default function Sobre() {
-        const [currentView, setCurrentView] = useState('contatos')
+        const [currentView, setCurrentView] = useState('contato')
     
         return(
             <div className="container py-4">
@@ -50,10 +51,10 @@ import { useState  } from 'react'
                             className={`btn btn-md btn-block w-100 py-3 fw-semibold shadow-sm ${currentView === 'localizacao' ? 'btn-outline-dark' : 'btn-primary-dark'} row-auto`}
                             onClick={() => setCurrentView('localizacao')}
                         >
-                            Localização
+                            Localização e Avaliações
                         </button>
                     </div>
-               
+
                 </div>
             </div>
 
@@ -115,6 +116,9 @@ function Localizacao(){
   return (
     <APIProvider apiKey={apiKey}>
       <MapComponent />
+      <PlaceDetails placeId='ChIJ_Qdn5dZZzpQRWJ5lDWdVmSY' />
     </APIProvider>
   );
+
 }
+

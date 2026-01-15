@@ -13,11 +13,10 @@ export default function Princ(){
                     loop 
                     muted 
                     playsInline
-                    preload='metadata' {/* SEO: Preload metadata para melhor performance */}
-                    poster='/posterbg.png' {/* SEO: Poster como fallback para melhor UX */}
+                    preload='metadata' /* SEO: Preload metadata para melhor performance */
+                    poster='/posterbg.png' /* SEO: Poster como fallback para melhor UX */
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{objectFit: 'cover', opacity: 0.4}}
-
                 >
                     <source src="/backgroundprinc.mp4" type="video/mp4" />
                     <source src="/seu-video.webm" type="video/webm" />
