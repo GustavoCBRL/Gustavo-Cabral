@@ -19,7 +19,7 @@ export default function Princ(){
                     style={{objectFit: 'cover', opacity: 0.4}}
                 >
                     <source src="/backgroundprinc.mp4" type="video/mp4" />
-                    <source src="/seu-video.webm" type="video/webm" />
+                    <source src="/backgroundprinc.webm" type="video/webm" />
                     Seu navegador não suporta vídeos.
                 </video>
 
